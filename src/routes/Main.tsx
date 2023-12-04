@@ -12,7 +12,9 @@ function Main(){
                 </div>
                 <hr style={{width: '960px', borderColor: '#202020'}} />
                 <div style={{marginTop: 24}}>
-
+                    <div>
+                        
+                    </div>
                 </div>
             </section>
             <section className={styles.section_root}>
