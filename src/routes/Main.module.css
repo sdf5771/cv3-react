@@ -1,0 +1,25 @@
+.root{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.section_root{
+    display: flex;
+    width: 960px;
+    flex-direction: column;
+}
+.section_header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 8px;
+}
+.section_header > .title_text{
+    font-family: 'Noto Sans KR';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #202020;
+}
