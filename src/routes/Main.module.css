@@ -15,6 +15,7 @@
     width: 100%;
     align-items: center;
     gap: 8px;
+    padding-bottom: 8px;
 }
 .section_header > .title_text{
     font-family: 'Noto Sans KR';
@@ -22,4 +23,9 @@
     font-size: 22px;
     line-height: 32px;
     color: #202020;
+}
+.market_index_list{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
