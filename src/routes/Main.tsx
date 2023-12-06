@@ -8,6 +8,7 @@ import { community } from 'types/community';
 import { marketIndexType } from 'types/marketIndextype';
 import { news } from 'types/news';
 import MarketIndexEle from 'components/MarketIndexEle';
+import { CircleQuestion } from 'assets/svg-components';
 
 type resData = {
 	// 마켓 인덱스
@@ -71,12 +72,33 @@ function Main(){
                     <QuestionMarker />
                 </div>
                 <hr style={{margin: 0, width: '960px', borderColor: '#202020'}} />
-                <div>
-                    <div>
-
+                <div className={styles.table_container}>
+                    <div className={styles.table_header}>
+                        <div className={styles.td} style={{width: 92, marginLeft: 11, marginRight: 15}}>
+                            <span className={styles.td_title_text}>이미지</span>
+                        </div>
+                        <div className={styles.td} style={{width: 414, marginRight: 20}}>
+                            <span className={styles.td_title_text}>상품정보</span>
+                        </div>
+                        <div style={{marginRight: 8}} className={styles.td}>
+                            <span className={styles.td_title_text}>맞춤보고서</span>
+                            <div style={{width: 17, height: 17}}><CircleQuestion width={16} height={16}/></div>
+                        </div>
+                        <div style={{width: 102,marginRight: 4}} className={styles.td}>
+                            <span className={styles.td_title_text}>평균매출</span>
+                            <div style={{width: 17, height: 17}}><CircleQuestion width={16} height={16}/></div>
+                        </div>
+                        <div style={{width: 102,marginRight: 4}} className={styles.td}>
+                            <span className={styles.td_title_text}>평균판매량</span>
+                            <div style={{width: 17, height: 17}}><CircleQuestion width={16} height={16}/></div>
+                        </div>
+                        <div style={{width: 102,marginRight: 8}} className={styles.td}>
+                            <span className={styles.td_title_text}>백분위</span>
+                            <div style={{width: 17, height: 17}}><CircleQuestion width={16} height={16}/></div>
+                        </div>
                     </div>
-                    <div>
-
+                    <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
+                        
                     </div>
                 </div>
             </section>
@@ -85,12 +107,26 @@ function Main(){
                     <span className={styles.title_text}>인기 커뮤니티 글</span>
                 </div>
                 <hr style={{margin: 0, width: '960px', borderColor: '#202020'}} />
-                <div>
-                    <div>
-                        
+                <div className={styles.table_container}>
+                    <div className={styles.table_header}>
+                        <div className={styles.td} style={{width: '10%'}}>
+                            <span className={styles.td_title_text}>말머리</span>
+                        </div>
+                        <div className={styles.td} style={{width: '60%'}}>
+                            <span className={styles.td_title_text}>제목</span>
+                        </div>
+                        <div style={{width: '10%'}} className={styles.td}>
+                            <span className={styles.td_title_text}>작성자</span>
+                        </div>
+                        <div style={{width: '15%'}} className={styles.td}>
+                            <span className={styles.td_title_text}>조회수</span>
+                        </div>
+                        <div style={{width: '15%'}} className={styles.td}>
+                            <span className={styles.td_title_text}>작성일자</span>
+                        </div>
                     </div>
-                    <div>
-
+                    <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
+                        
                     </div>
                 </div>
             </section>
@@ -99,12 +135,20 @@ function Main(){
                     <span className={styles.title_text}>최신 뉴스</span>
                 </div>
                 <hr style={{margin: 0, width: '960px', borderColor: '#202020'}} />
-                <div>
-                    <div>
-                        
+                <div className={styles.table_container}>
+                    <div className={styles.table_header}>
+                        <div className={styles.td} style={{width: 640}}>
+                            <span className={styles.td_title_text}>제목</span>
+                        </div>
+                        <div style={{width: 85}} className={styles.td}>
+                            <span className={styles.td_title_text}>조회수</span>
+                        </div>
+                        <div style={{width: 65,marginLeft: 73,marginRight: 32}} className={styles.td}>
+                            <span className={styles.td_title_text}>작성일자</span>
+                        </div>
                     </div>
-                    <div>
-
+                    <div style={{display: 'flex', flexDirection: 'column', width: '100%'}}>
+                        
                     </div>
                 </div>
             </section>
